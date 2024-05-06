@@ -6,6 +6,7 @@ let numero2 = 0;
 let resultado = 0;
 
 let btnMostrarDatos = document.getElementById("btnMostrarDatos");
+let selectValores = document.getElementById("valores");
 
 let error1 = document.getElementById("error1");
 let error2 = document.getElementById("error2");
@@ -16,6 +17,8 @@ btnMostrarDatos.addEventListener("click", function(e){
 
     error1.innerHTML = "";
     error2.innerHTML = "";
+
+    console.log(selectValores.value);
 
     numero1 = document.getElementById("numero1").value;
 
